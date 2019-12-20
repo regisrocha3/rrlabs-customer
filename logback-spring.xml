@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
+ 
+    <springProfile name="dev,staging">
+        <logger name="rr.labs" level="DEBUG" additivity="false">
+            <appender-ref ref="CONSOLE" />
+        </logger>
+    </springProfile>
+ 
+    <springProfile name="production">
+        <logger name="rr.labs" level="WARN" additivity="false">
+            <appender-ref ref="FILE" />
+        </logger>
+    </springProfile>
+ 
+    <if condition='property("spring.profiles.active").contains("dev")'>
+        <then>
+            <logger name="rr.labs" level="DEBUG" additivity="false">
+                <appender-ref ref="CONSOLE" />
+            </logger>
+        </then>
+        <else>
+            <logger name="rr.labs" level="INFO" additivity="false">
+                <appender-ref ref="FILE" />
+                <appender-ref ref="CONSOLE" />
+            </logger>
+        </else>
+    </if>
+</configuration>

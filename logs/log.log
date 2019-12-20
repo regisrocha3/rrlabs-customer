@@ -1,0 +1,32 @@
+18-12-2019 21:45:53.130 [main] INFO  rr.labs.crud.CrudApplication.logStarting - Starting CrudApplication on regis-pc with PID 11908 (/home/regis/app/projects/sprintBoot/crud/target/classes started by regis in /home/regis/app/projects/sprintBoot/crud)
+18-12-2019 21:45:53.139 [main] INFO  rr.labs.crud.CrudApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+18-12-2019 21:45:56.882 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+18-12-2019 21:45:56.903 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+18-12-2019 21:45:56.904 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.29]
+18-12-2019 21:45:57.075 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+18-12-2019 21:45:57.075 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3795 ms
+18-12-2019 21:45:58.321 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+18-12-2019 21:45:58.514 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+18-12-2019 21:45:59.046 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+18-12-2019 21:45:59.741 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+18-12-2019 21:45:59.802 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+18-12-2019 21:45:59.912 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+18-12-2019 21:46:00.190 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+18-12-2019 21:46:00.214 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18-12-2019 21:46:00.227 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter.report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+18-12-2019 21:46:00.258 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
