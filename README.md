@@ -4,7 +4,7 @@
 
 ### A ideia principal é um cadastro simples de cliente utilizando banco NOSql Cassandra__
 
-### Existe 4 Principais APIs:__
+### Existe 4 Principais APIs:
 - GET: /customer
 - POST: /customer
 - PUT: /customer
@@ -23,4 +23,11 @@ Para visualizar o codigo da API, acesse a seguinte classe:
     
     rr.labs.customer.controller.CustomerController     
 
+Para construção da imagem do docker do projeto rrlabs-customer
+
+    docker build -t rrlabs-customer .
+
+Após a contrução da imagem, a execução do container:
+
+     docker run -it -p 8080:8080 rrlabs-customer
 
